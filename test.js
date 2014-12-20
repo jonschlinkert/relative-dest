@@ -25,7 +25,7 @@ it('should calculate the relative path to the given directory', function () {
 it('should detect when source and result path are the same', function () {
   assert.equal(relative('a/b/c/', 'a/b/c/'), './');
   assert.equal(relative('a/b/c/', 'a/b/c'), './');
-  assert.equal(relative('a/b/c', 'a/b/c'), '');
+  assert.equal(relative('a/b/c', 'a/b/c'), '.');
 });
 
 it('should determine trailing slash based on source paths:', function () {

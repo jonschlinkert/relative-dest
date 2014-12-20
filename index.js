@@ -25,7 +25,12 @@ module.exports = function relativeDest(fp, dest, slash) {
 
   var res = relative(fp, dest);
   var len = res.length;
-  res = len > 0 ? res : '.';
+  if (len === 0) {
+    if (last === '/') {
+      return './';
+    }
+    return '.';
+  }
 
   // add or remove trailing slash, based on the orig path
   if (slash === true) {
@@ -36,13 +41,6 @@ module.exports = function relativeDest(fp, dest, slash) {
     }
   }
 
-  if (path.normalize(orig) === path.normalize(res) || res === '.') {
-    if (last === '/') {
-      return './';
-    } else {
-      return '';
-    }
-  }
   // we need to normalize since it's used in URLs
   return res.replace(/[\\\/]/g, '/');
 };
