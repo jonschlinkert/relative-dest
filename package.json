@@ -1,0 +1,48 @@
+{
+  "name": "relative-dest",
+  "description": "Calculate the relative path from a file's destination path to another directory or file.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/relative-dest",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/relative-dest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/relative-dest/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/relative-dest/blob/master/LICENSE-MIT"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "relative": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+    "assets",
+    "calculate",
+    "dir",
+    "directory",
+    "file",
+    "filepath",
+    "fp",
+    "path",
+    "public",
+    "resolve",
+    "url"
+  ]
+}
