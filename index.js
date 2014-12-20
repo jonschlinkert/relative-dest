@@ -7,7 +7,6 @@
 
 'use strict';
 
-var path = require('path');
 var relative = require('relative');
 
 module.exports = function relativeDest(fp, dest, slash) {
@@ -20,7 +19,6 @@ module.exports = function relativeDest(fp, dest, slash) {
   }
 
   slash = arguments[arguments.length - 1];
-  var orig = fp;
   var last = fp[fp.length - 1];
 
   var res = relative(fp, dest);
