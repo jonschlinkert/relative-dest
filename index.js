@@ -10,7 +10,7 @@
 var path = require('path');
 var relative = require('relative');
 
-module.exports = function(fp, dest, slash) {
+module.exports = function relativeDest(fp, dest, slash) {
   if (typeof dest !== 'string') {
     return fp;
   }
